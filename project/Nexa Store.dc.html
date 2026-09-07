@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  body { margin:0; background:#f2f2f4; -webkit-font-smoothing:antialiased; }
+  a { color:#4b3ecb; text-decoration:none; }
+  a:hover { color:#2a2c33; }
+  ::-webkit-scrollbar { width:0; height:0; }
+</style>
+</helmet>
+
+<section style="padding:56px 48px 80px; font-family:Archivo, sans-serif; color:#22242b; display:flex; flex-direction:column; gap:34px">
+
+  <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:40px; border-bottom:1px solid rgba(34,36,43,.16); padding-bottom:18px">
+    <div style="display:flex; flex-direction:column; gap:8px">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.06em; color:rgba(34,36,43,.5)">1a</div>
+      <div style="font-size:38px; font-weight:700; font-stretch:112%; letter-spacing:-.022em; line-height:1">Nexa — mobile store</div>
+    </div>
+    <div style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; line-height:1.7; color:rgba(34,36,43,.62); text-align:right">
+      <div>390 × 844 · 6 screens</div>
+      <div>Archivo / IBM Plex Mono · accent <span style="color:var(--nx-accent,#4b3ecb)">anodize violet</span></div>
+    </div>
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap; gap:40px; --nx-accent:{{ accent }}">
+
+    <!-- 01 HOME -->
+    <div style="display:flex; flex-direction:column; gap:12px">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(34,36,43,.55)">01 — Home</div>
+      <div style="width:410px; padding:10px; background:#1c1e24; border-radius:46px; box-shadow:0 24px 60px -30px rgba(20,22,28,.55)">
+        <div style="width:390px; height:844px; background:#fbfbfc; border-radius:37px; overflow:hidden; position:relative">
+          <div style="height:100%; overflow-y:auto">
+
+            <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 22px 6px; font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:500; color:#22242b">
+              <div>10:24</div>
+              <div style="display:flex; align-items:flex-end; gap:3px">
+                <div style="width:3px; height:5px; background:#22242b"></div>
+                <div style="width:3px; height:8px; background:#22242b"></div>
+                <div style="width:3px; height:11px; background:#22242b"></div>
+                <div style="width:22px; height:10px; border:1px solid #22242b; margin-left:5px; padding:1.5px; display:flex"><div style="flex:0 0 72%; background:#22242b"></div></div>
+              </div>
+            </div>
+
+            <div style="display:flex; align-items:baseline; justify-content:space-between; padding:12px 22px 14px">
+              <div style="font-size:21px; font-weight:800; font-stretch:88%; letter-spacing:.02em">NEXA</div>
+              <div style="display:flex; gap:16px; font-family:'IBM Plex Mono',monospace; font-size:12px; color:rgba(34,36,43,.72)">
+                <div>search</div>
+                <div>bag <span style="color:var(--nx-accent,#4b3ecb); font-weight:600">2</span></div>
+              </div>
+            </div>
+
+            <div style="position:relative; background:#1c1e24; color:#f4f4f6; overflow:hidden">
+              <div style="height:452px; background-image:repeating-linear-gradient(122deg, rgba(255,255,255,.06) 0 7px, rgba(255,255,255,0) 7px 15px); position:relative">
+                <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(244,244,246,.5); text-align:center; line-height:1.7">product shot<br>Nexa Arc 5 Pro · 3:4 · dark ground</div>
+                <div style="position:absolute; top:0; right:0; bottom:0; width:54px; border-left:1px solid rgba(244,244,246,.18); background-image:repeating-linear-gradient(180deg, rgba(244,244,246,.34) 0 1px, rgba(244,244,246,0) 1px 15px); background-position:right; background-size:9px 100%; background-repeat:repeat-y"></div>
+                <div style="position:absolute; top:50%; right:12px; transform:translateY(-50%) rotate(90deg); font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:.14em; color:rgba(244,244,246,.66)">6.30 IN</div>
+              </div>
+              <div style="padding:22px 22px 26px; display:flex; flex-direction:column; gap:16px">
+                <div style="font-size:36px; font-weight:700; font-stretch:114%; letter-spacing:-.028em; line-height:.98">Arc 5 Pro</div>
+                <div style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:rgba(244,244,246,.68); display:grid; grid-template-columns:1fr 1fr; row-gap:7px; column-gap:14px; border-top:1px solid rgba(244,244,246,.16); border-bottom:1px solid rgba(244,244,246,.16); padding:12px 0">
+                  <div>48 MP triple</div><div>4,700 mAh</div>
+                  <div>Ti frame, 187 g</div><div>USB-C 3.2, 40 W</div>
+                </div>
+                <div style="display:flex; align-items:center; justify-content:space-between">
+                  <div style="font-family:'IBM Plex Mono',monospace; font-size:20px; font-weight:500; font-variant-numeric:tabular-nums">$1,349</div>
+                  <div style="padding:12px 22px; background:#fbfbfc; color:#1c1e24; font-size:14px; font-weight:600; letter-spacing:-.005em">View the Arc 5 Pro</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display:flex; padding:0 22px; border-bottom:1px solid rgba(34,36,43,.14)">
+              <sc-for list="{{ cats }}" as="c" hint-placeholder-count="5">
+                <div style="flex:1 1 0; padding:16px 0 14px; border-right:1px solid rgba(34,36,43,.14); display:flex; flex-direction:column; gap:6px; align-items:flex-start">
+                  <div style="font-size:13.5px; font-weight:600; letter-spacing:-.01em; padding-right:10px">{{ c.name }}</div>
+                  <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:rgba(34,36,43,.48)">{{ c.count }}</div>
+                </div>
+              </sc-for>
+            </div>
+
+            <div style="padding:26px 22px 12px; display:flex; align-items:baseline; justify-content:space-between">
+              <div style="font-size:19px; font-weight:700; font-stretch:106%; letter-spacing:-.02em">New this season</div>
+              <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(34,36,43,.5)">7 items</div>
+            </div>
+
+            <div style="margin:0 22px 22px; background:#eceaf6; display:flex; flex-direction:column">
+              <div style="height:190px; background-image:repeating-linear-gradient(122deg, rgba(34,36,43,.07) 0 7px, rgba(34,36,43,0) 7px 15px); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(34,36,43,.5)">editorial shot · Vue headset</div>
+              <div style="padding:16px 18px 18px; display:flex; flex-direction:column; gap:10px">
+                <div style="font-size:22px; font-weight:700; font-stretch:110%; letter-spacing:-.024em; line-height:1.04">Nexa Vue<br>spatial headset</div>
+                <div style="font-size:13.5px; line-height:1.5; color:rgba(34,36,43,.7); max-width:250px; text-wrap:pretty">Passthrough at 90 Hz, 384 g on the head, tethered to the Slate.</div>
+                <div style="font-family:'IBM Plex Mono',monospace; font-size:16px; font-weight:500; font-variant-numeric:tabular-nums; margin-top:2px">$749</div>
+              </div>
+            </div>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; border-top:1px solid rgba(34,36,43,.14)">
+              <sc-for list="{{ grid }}" as="p" hint-placeholder-count="4">
+                <div style="padding:16px 18px 20px; border-bottom:1px solid rgba(34,36,43,.14); border-right:1px solid rgba(34,36,43,.14); display:flex; flex-direction:column; gap:12px">
+                  <div style="height:118px; background:#f1f1f3; background-image:repeating-linear-gradient(122deg, rgba(34,36,43,.06) 0 6px, rgba(34,36,43,0) 6px 13px); display:flex; align-items:flex-end; padding:8px; font-family:'IBM Plex Mono',monospace; font-size:9.5px; color:rgba(34,36,43,.45)">{{ p.slot }}</div>
+                  <div style="display:flex; flex-direction:column; gap:5px">
+                    <div style="font-size:14px; font-weight:600; letter-spacing:-.012em; line-height:1.25">{{ p.name }}</div>
+                    <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:rgba(34,36,43,.5)">{{ p.spec }}</div>
+                    <div style="font-family:'IBM Plex Mono',monospace; font-size:14px; font-weight:500; font-variant-numeric:tabular-nums; margin-top:3px">{{ p.price }}</div>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+
+            <div style="height:74px"></div>
+          </div>
+
+          <div style="position:absolute; left:0; right:0; bottom:0; background:rgba(251,251,252,.94); backdrop-filter:blur(12px); border-top:1px solid rgba(34,36,43,.16); display:flex; padding:12px 22px 22px; font-family:'IBM Plex Mono',monospace; font-size:11px">
+            <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:7px; color:#22242b"><div style="width:16px; height:2px; background:var(--nx-accent,#4b3ecb)"></div>store</div>
+            <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:7px; color:rgba(34,36,43,.5)"><div style="width:16px; height:2px; background:transparent"></div>browse</div>
+            <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:7px; color:rgba(34,36,43,.5)"><div style="width:16px; height:2px; background:transparent"></div>saved</div>
+            <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:7px; color:rgba(34,36,43,.5)"><div style="width:16px; height:2px; background:transparent"></div>bag</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02 LISTING -->
+    <div style="display:flex; flex-direction:column; gap:12px">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(34,36,43,.55)">02 — Phones, filtered <span style="color:var(--nx-accent,#4b3ecb)">(tap Filter)</span></div>
+      <div style="width:410px; padding:10px; background:#1c1e24; border-radius:46px; box-shadow:0 24px 60px -30px rgba(20,22,28,.55)">
+        <div style="width:390px; height:844px; background:#fbfbfc; border-radius:37px; overflow:hidden; position:relative">
+          <div style="height:100%; overflow-y:auto">
+
+            <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 22px 6px; font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:500">
+              <div>10:24</div>
+              <div style="display:flex; align-items:flex-end; gap:3px">
+                <div style="width:3px; height:5px; background:#22242b"></div>
+                <div style="width:3px; height:8px; background:#22242b"></div>
+                <div style="width:3px; height:11px; background:#22242b"></div>
+                <div style="width:22px; height:10px; border:1px solid #22242b; margin-left:5px; padding:1.5px; display:flex"><div style="flex:0 0 72%; background:#22242b"></div></div>
+              </div>
+            </div>
+
+            <div style="padding:14px 22px 16px; display:flex; flex-direction:column; gap:14px; border-bottom:1px solid rgba(34,36,43,.14)">
+              <div style="display:flex; align-items:baseline; justify-content:space-between">
+                <div style="font-size:26px; font-weight:700; font-stretch:112%; letter-spacing:-.026em">Phones</div>
+                <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(34,36,43,.55)">{{ resultCount }} of 12</div>
+              </div>
+              <div style="display:flex; align-items:stretch; border:1px solid rgba(34,36,43,.22)">
+                <div onClick="{{ toggleFilters }}" style="flex:0 0 auto; padding:11px 15px; font-family:'IBM Plex Mono',monospace; font-size:11.5px; font-weight:500; border-right:1px solid rgba(34,36,43,.22); cursor:pointer; display:flex; align-items:center; gap:9px">
+                  <div style="width:9px; height:9px; background:var(--nx-accent,#4b3ecb)"></div>Filter {{ filterCount }}
+                </div>
+                <div onClick="{{ cycleSort }}" style="flex:1; padding:11px 15px; font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:rgba(34,36,43,.7); cursor:pointer; display:flex; align-items:center; justify-content:space-between">
+                  <div>sort: {{ sortLabel }}</div>
+                  <div style="display:flex; flex-direction:column; gap:2px"><div style="width:9px; height:1.5px; background:rgba(34,36,43,.55)"></div><div style="width:6px; height:1.5px; background:rgba(34,36,43,.55)"></div><div style="width:3px; height:1.5px; background:rgba(34,36,43,.55)"></div></div>
+                </div>
+              </div>
+              <div style="display:flex; flex-wrap:wrap; gap:8px">
+                <sc-for list="{{ activeTags }}" as="t" hint-placeholder-count="2">
+                  <div style="display:flex; align-items:center; gap:9px; padding:7px 10px; background:#eceaf6; font-family:'IBM Plex Mono',monospace; font-size:11px">
+                    <div style="width:1.5px; height:11px; background:var(--nx-accent,#4b3ecb)"></div>{{ t.label }}<span style="color:rgba(34,36,43,.45)">×</span>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+
+            <sc-for list="{{ listing }}" as="p" hint-placeholder-count="4">
+              <div style="display:flex; gap:16px; padding:18px 22px; border-bottom:1px solid rgba(34,36,43,.12)">
+                <div style="flex:0 0 108px; height:132px; background:#f1f1f3; background-image:repeating-linear-gradient(122deg, rgba(34,36,43,.06) 0 6px, rgba(34,36,43,0) 6px 13px); display:flex; align-items:flex-end; padding:7px; font-family:'IBM Plex Mono',monospace; font-size:9px; color:rgba(34,36,43,.45)">{{ p.slot }}</div>
+                <div style="flex:1; display:flex; flex-direction:column; justify-content:space-between; padding:2px 0">
+                  <div style="display:flex; flex-direction:column; gap:7px">
+                    <div style="font-size:17px; font-weight:600; letter-spacing:-.018em; line-height:1.15">{{ p.name }}</div>
+                    <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; line-height:1.65; color:rgba(34,36,43,.58); white-space:pre-line">{{ p.spec }}</div>
+                  </div>
+                  <div style="display:flex; align-items:flex-end; justify-content:space-between">
+                    <div style="display:flex; align-items:baseline; gap:9px">
+                      <div style="font-family:'IBM Plex Mono',monospace; font-size:17px; font-weight:600; font-variant-numeric:tabular-nums">{{ p.price }}</div>
+                      <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(34,36,43,.42); text-decoration:line-through">{{ p.was }}</div>
+                    </div>
+                    <div style="display:flex; gap:4px">
+                      <sc-for list="{{ p.dots }}" as="d" hint-placeholder-count="3">
+                        <div style="width:10px; height:10px; background:{{ d.hex }}"></div>
+                      </sc-for>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </sc-for>
+            <div style="height:40px"></div>
+          </div>
+
+          <sc-if value="{{ filtersOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute; inset:0; background:rgba(24,26,32,.42)"></div>
+            <div style="position:absolute; left:0; right:0; bottom:0; background:#fbfbfc; border-top:2px solid #1c1e24; padding:20px 22px 24px; display:flex; flex-direction:column; gap:22px">
+              <div style="display:flex; align-items:baseline; justify-content:space-between">
+                <div style="font-size:20px; font-weight:700; font-stretch:110%; letter-spacing:-.022em">Filter</div>
+                <div onClick="{{ toggleFilters }}" style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:rgba(34,36,43,.6); cursor:pointer">close</div>
+              </div>
+
+              <div style="display:flex; flex-direction:column; gap:12px">
+                <div style="display:flex; justify-content:space-between; font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(34,36,43,.6)"><div>price</div><div>$600 — $1,400</div></div>
+                <div style="position:relative; height:34px; background-image:repeating-linear-gradient(90deg, rgba(34,36,43,.28) 0 1px, rgba(34,36,43,0) 1px 12px); background-position:bottom; background-size:100% 12px; background-repeat:repeat-x">
+                  <div style="position:absolute; left:22%; right:32%; top:0; height:22px; border-top:2px solid var(--nx-accent,#4b3ecb); border-bottom:1px solid rgba(34,36,43,.2)"></div>
+                  <div style="position:absolute; left:22%; top:0; width:2px; height:34px; background:var(--nx-accent,#4b3ecb)"></div>
+                  <div style="position:absolute; right:32%; top:0; width:2px; height:34px; background:var(--nx-accent,#4b3ecb)"></div>
+                </div>
+              </div>
+
+              <div style="display:flex; flex-direction:column; gap:11px">
+                <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(34,36,43,.6)">screen size</div>
+                <div style="display:flex; border:1px solid rgba(34,36,43,.22)">
+                  <sc-for list="{{ sizeOpts }}" as="s" hint-placeholder-count="4">
+                    <div onClick="{{ s.onPick }}" style="flex:1; padding:12px 0; text-align:center; font-family:'IBM Plex Mono',monospace; font-size:11.5px; cursor:pointer; border-right:1px solid rgba(34,36,43,.22); background:{{ s.bg }}; color:{{ s.fg }}">{{ s.label }}</div>
+                  </sc-for>
+                </div>
+              </div>
+
+              <div style="display:flex; flex-direction:column; gap:2px">
+                <sc-for list="{{ specFilters }}" as="f" hint-placeholder-count="3">
+                  <div onClick="{{ f.onPick }}" style="display:flex; align-items:center; justify-content:space-between; padding:13px 0; border-bottom:1px solid rgba(34,36,43,.12); cursor:pointer">
+                    <div style="font-size:14.5px; font-weight:500; letter-spacing:-.01em">{{ f.label }}</div>
+                    <div style="display:flex; align-items:center; gap:12px">
+                      <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:rgba(34,36,43,.42)">{{ f.count }}</div>
+                      <div style="width:15px; height:15px; border:1px solid rgba(34,36,43,.35); background:{{ f.bg }}"></div>
+                    </div>
+                  </div>
+                </sc-for>
+              </div>
+
+              <div onClick="{{ toggleFilters }}" style="padding:16px; background:#1c1e24; color:#fbfbfc; text-align:center; font-size:15px; font-weight:600; cursor:pointer">Show {{ resultCount }} phones</div>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+    </div>
+
+    <!-- 03 PDP -->
+    <div style="display:flex; flex-direction:column; gap:12px">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(34,36,43,.55)">03 — Product · <span style="color:var(--nx-accent,#4b3ecb)">drag the caliper rail, swap the finish</span></div>
+      <div style="width:410px; padding:10px; background:#1c1e24; border-radius:46px; box-shadow:0 24px 60px -30px rgba(20,22,28,.55)">
+        <div style="width:390px; height:844px; background:#fbfbfc; border-radius:37px; overflow:hidden; position:relative">
+          <div style="height:100%; overflow-y:auto">
+
+            <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 22px 6px; font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:500">
+              <div>10:24</div>
+              <div style="display:flex; align-items:flex-end; gap:3px">
+                <div style="width:3px; height:5px; background:#22242b"></div>
+                <div style="width:3px; height:8px; background:#22242b"></div>
+                <div style="width:3px; height:11px; background:#22242b"></div>
+                <div style="width:22px; height:10px; border:1px solid #22242b; margin-left:5px; padding:1.5px; display:flex"><div style="flex:0 0 72%; background:#22242b"></div></div>
+              </div>
+            </div>
+
+            <div style="display:flex; align-items:center; justify-content:space-between; padding:12px 22px 14px; font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:rgba(34,36,43,.7)">
+              <div>back</div>
+              <div>SKU {{ sku }}</div>
+              <div>save</div>
+            </div>
+
+            <div style="position:relative; overflow:hidden; background:{{ stageBg }}">
+              <div style="display:flex; width:500%; transition:transform 520ms cubic-bezier(.16,.84,.24,1); transform:translateX({{ galleryX }})">
+                <sc-for list="{{ frames }}" as="f" hint-placeholder-count="5">
+                  <div style="flex:1 1 0; height:400px; background-image:repeating-linear-gradient(122deg, rgba(255,255,255,.07) 0 7px, rgba(255,255,255,0) 7px 15px); display:flex; align-items:center; justify-content:center">
+                    <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(255,255,255,.62); text-align:center; line-height:1.8">{{ f.label }}<br>{{ f.note }}</div>
+                  </div>
+                </sc-for>
+              </div>
+              <div style="position:absolute; inset:0; background:#fbfbfc; pointer-events:none; opacity:{{ sweepOpacity }}; transition:opacity 420ms linear; mix-blend-mode:overlay"></div>
+              <div style="position:absolute; left:18px; bottom:16px; font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(255,255,255,.8); font-variant-numeric:tabular-nums">{{ frameIndex }} / 05</div>
+            </div>
+
+            <div style="padding:14px 22px 18px; border-bottom:1px solid rgba(34,36,43,.14); display:flex; flex-direction:column; gap:10px">
+              <div onClick="{{ nextFrame }}" style="position:relative; height:38px; cursor:pointer; background-image:repeating-linear-gradient(90deg, rgba(34,36,43,.3) 0 1px, rgba(34,36,43,0) 1px 9px); background-size:100% 14px; background-position:bottom; background-repeat:repeat-x; border-bottom:1px solid rgba(34,36,43,.22)">
+                <div style="position:absolute; bottom:0; top:0; width:64px; border-left:2px solid var(--nx-accent,#4b3ecb); border-right:2px solid var(--nx-accent,#4b3ecb); background:rgba(75,62,203,.07); transition:left 520ms cubic-bezier(.16,.84,.24,1); left:{{ railX }}">
+                  <div style="position:absolute; left:0; right:0; top:16px; height:2px; background:var(--nx-accent,#4b3ecb)"></div>
+                </div>
+              </div>
+              <div style="display:flex; justify-content:space-between; font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:rgba(34,36,43,.5)">
+                <div>front</div><div>edge</div><div>ports</div><div>screen</div><div>in hand</div>
+              </div>
+            </div>
+
+            <div style="padding:22px 22px 18px">
+              <div style="display:flex; flex-direction:column; gap:14px">
+                <div style="font-size:32px; font-weight:700; font-stretch:114%; letter-spacing:-.03em; line-height:1">Nexa Arc 5 Pro</div>
+                <div style="display:flex; align-items:baseline; gap:12px">
+                  <div style="font-family:'IBM Plex Mono',monospace; font-size:24px; font-weight:600; font-variant-numeric:tabular-nums">$1,349</div>
+                  <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:rgba(34,36,43,.5)">or $56.20 / mo · 24 mo</div>
+                </div>
+                <div style="font-size:14.5px; line-height:1.55; color:rgba(34,36,43,.74); text-wrap:pretty">Titanium unibody, 6.30-inch display at 1600 nits, and a 48 MP sensor that keeps its detail at dusk. Charges to 60% in 22 minutes.</div>
+              </div>
+            </div>
+
+            <div style="padding:0 22px 22px; display:flex; flex-direction:column; gap:12px">
+              <div style="display:flex; align-items:baseline; justify-content:space-between">
+                <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(34,36,43,.6)">finish</div>
+                <div style="font-size:14px; font-weight:600; letter-spacing:-.012em">{{ variantName }}</div>
+              </div>
+              <div style="display:flex; gap:10px">
+                <sc-for list="{{ variants }}" as="v" hint-placeholder-count="4">
+                  <div onClick="{{ v.onPick }}" style="flex:1; cursor:pointer; padding:5px; border:1px solid {{ v.border }}; transition:border-color 240ms">
+                    <div style="height:44px; background:{{ v.hex }}; background-image:repeating-linear-gradient(105deg, rgba(255,255,255,.16) 0 2px, rgba(255,255,255,0) 2px 6px)"></div>
+                  </div>
+                </sc-for>
+              </div>
+              <div style="display:flex; gap:10px; margin-top:4px">
+                <sc-for list="{{ storage }}" as="s" hint-placeholder-count="3">
+                  <div onClick="{{ s.onPick }}" style="flex:1; padding:13px 0; text-align:center; font-family:'IBM Plex Mono',monospace; font-size:12px; border:1px solid {{ s.border }}; background:{{ s.bg }}; color:{{ s.fg }}; cursor:pointer">{{ s.label }}</div>
+                </sc-for>
+              </div>
+            </div>
+
+            <div style="padding:0 22px 26px">
+              <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(34,36,43,.6); padding-bottom:6px; border-bottom:1px solid rgba(34,36,43,.22)">specification</div>
+              <sc-for list="{{ specs }}" as="s" hint-placeholder-count="6">
+                <div style="display:flex; justify-content:space-between; gap:20px; padding:11px 0; border-bottom:1px solid rgba(34,36,43,.1); font-family:'IBM Plex Mono',monospace; font-size:11.5px">
+                  <div style="color:rgba(34,36,43,.55)">{{ s.k }}</div>
+                  <div style="text-align:right">{{ s.v }}</div>
+                </div>
+              </sc-for>
+            </div>
+            <div style="height:106px"></div>
+          </div>
+
+          <div style="position:absolute; left:0; right:0; bottom:0; background:#1c1e24; color:#fbfbfc; padding:14px 22px 24px; display:flex; align-items:center; gap:16px">
+            <div style="flex:1; display:flex; flex-direction:column; gap:4px">
+              <div style="font-family:'IBM Plex Mono',monospace; font-size:16px; font-weight:600; font-variant-numeric:tabular-nums">$1,349</div>
+              <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:rgba(244,244,246,.62)">{{ variantName }} · 256 GB · ships Tue</div>
+            </div>
+            <div style="padding:15px 26px; background:var(--nx-accent,#4b3ecb); color:#fff; font-size:15px; font-weight:600; letter-spacing:-.008em">Add to bag</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 BAG -->
+    <div style="display:flex; flex-direction:column; gap:12px">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(34,36,43,.55)">04 — Bag</div>
+      <div style="width:410px; padding:10px; background:#1c1e24; border-radius:46px; box-shadow:0 24px 60px -30px rgba(20,22,28,.55)">
+        <div style="width:390px; height:844px; background:#fbfbfc; border-radius:37px; overflow:hidden; position:relative">
+          <div style="height:100%; overflow-y:auto">
+            <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 22px 6px; font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:500">
+              <div>10:24</div>
+              <div style="display:flex; align-items:flex-end; gap:3px">
+                <div style="width:3px; height:5px; background:#22242b"></div>
+                <div style="width:3px; height:8px; background:#22242b"></div>
+                <div style="width:3px; height:11px; background:#22242b"></div>
+                <div style="width:22px; height:10px; border:1px solid #22242b; margin-left:5px; padding:1.5px; display:flex"><div style="flex:0 0 72%; background:#22242b"></div></div>
+              </div>
+            </div>
+
+            <div style="padding:14px 22px 16px; display:flex; align-items:baseline; justify-content:space-between; border-bottom:1px solid rgba(34,36,43,.22)">
+              <div style="font-size:26px; font-weight:700; font-stretch:112%; letter-spacing:-.026em">Bag</div>
+              <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(34,36,43,.55)">2 items</div>
+            </div>
+
+            <sc-for list="{{ bag }}" as="b" hint-placeholder-count="2">
+              <div style="display:flex; gap:16px; padding:20px 22px; border-bottom:1px solid rgba(34,36,43,.12)">
+                <div style="flex:0 0 84px; height:100px; background:#f1f1f3; background-image:repeating-linear-gradient(122deg, rgba(34,36,43,.06) 0 6px, rgba(34,36,43,0) 6px 13px)"></div>
+                <div style="flex:1; display:flex; flex-direction:column; justify-content:space-between">
+                  <div style="display:flex; flex-direction:column; gap:6px">
+                    <div style="display:flex; justify-content:space-between; gap:12px">
+                      <div style="font-size:16px; font-weight:600; letter-spacing:-.016em">{{ b.name }}</div>
+                      <div style="font-family:'IBM Plex Mono',monospace; font-size:15px; font-weight:600; font-variant-numeric:tabular-nums">{{ b.price }}</div>
+                    </div>
+                    <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:rgba(34,36,43,.55)">{{ b.config }}</div>
+                  </div>
+                  <div style="display:flex; align-items:center; justify-content:space-between">
+                    <div style="display:flex; align-items:stretch; border:1px solid rgba(34,36,43,.22); font-family:'IBM Plex Mono',monospace; font-size:12px">
+                      <div style="padding:6px 11px; border-right:1px solid rgba(34,36,43,.22)">−</div>
+                      <div style="padding:6px 12px">{{ b.qty }}</div>
+                      <div style="padding:6px 11px; border-left:1px solid rgba(34,36,43,.22)">+</div>
+                    </div>
+                    <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(34,36,43,.5)">remove</div>
+                  </div>
+                </div>
+              </div>
+            </sc-for>
+
+            <div style="margin:22px; padding:16px 18px; border:1px solid rgba(34,36,43,.18); display:flex; gap:14px; align-items:center">
+              <div style="flex:0 0 52px; height:52px; background:#eceaf6; background-image:repeating-linear-gradient(122deg, rgba(34,36,43,.07) 0 5px, rgba(34,36,43,0) 5px 11px)"></div>
+              <div style="flex:1; display:flex; flex-direction:column; gap:4px">
+                <div style="font-size:13.5px; font-weight:600; letter-spacing:-.01em">Add Cell 20K power bank</div>
+                <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:rgba(34,36,43,.55)">$89 · 40 W passthrough</div>
+              </div>
+              <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--nx-accent,#4b3ecb); font-weight:500">add</div>
+            </div>
+
+            <div style="padding:0 22px 22px; display:flex; flex-direction:column">
+              <div style="font-family:'IBM Plex Mono',monospace; font-size:11.5px">
+                <div style="display:flex; justify-content:space-between; padding:10px 0; border-top:1px solid rgba(34,36,43,.12)"><div style="color:rgba(34,36,43,.6)">subtotal</div><div style="font-variant-numeric:tabular-nums">$1,578.00</div></div>
+                <div style="display:flex; justify-content:space-between; padding:10px 0; border-top:1px solid rgba(34,36,43,.12)"><div style="color:rgba(34,36,43,.6)">delivery</div><div>free, Tue 9 Sep</div></div>
+                <div style="display:flex; justify-content:space-between; padding:10px 0; border-top:1px solid rgba(34,36,43,.12)"><div style="color:rgba(34,36,43,.6)">estimated tax</div><div style="font-variant-numeric:tabular-nums">$134.13</div></div>
+              </div>
+              <div style="display:flex; align-items:baseline; justify-content:space-between; padding-top:16px; margin-top:6px; border-top:2px solid #1c1e24">
+                <div style="font-size:17px; font-weight:600; letter-spacing:-.018em">Total</div>
+                <div style="font-family:'IBM Plex Mono',monospace; font-size:22px; font-weight:600; font-variant-numeric:tabular-nums">$1,712.13</div>
+              </div>
+            </div>
+            <div style="height:100px"></div>
+          </div>
+
+          <div style="position:absolute; left:0; right:0; bottom:0; background:rgba(251,251,252,.95); backdrop-filter:blur(12px); border-top:1px solid rgba(34,36,43,.16); padding:14px 22px 24px">
+            <div style="padding:16px; background:#1c1e24; color:#fbfbfc; text-align:center; font-size:15px; font-weight:600">Check out</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 05 SAVED -->
+    <div style="display:flex; flex-direction:column; gap:12px">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(34,36,43,.55)">05 — Saved</div>
+      <div style="width:410px; padding:10px; background:#1c1e24; border-radius:46px; box-shadow:0 24px 60px -30px rgba(20,22,28,.55)">
+        <div style="width:390px; height:844px; background:#fbfbfc; border-radius:37px; overflow:hidden; position:relative">
+          <div style="height:100%; overflow-y:auto">
+            <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 22px 6px; font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:500">
+              <div>10:24</div>
+              <div style="display:flex; align-items:flex-end; gap:3px">
+                <div style="width:3px; height:5px; background:#22242b"></div>
+                <div style="width:3px; height:8px; background:#22242b"></div>
+                <div style="width:3px; height:11px; background:#22242b"></div>
+                <div style="width:22px; height:10px; border:1px solid #22242b; margin-left:5px; padding:1.5px; display:flex"><div style="flex:0 0 72%; background:#22242b"></div></div>
+              </div>
+            </div>
+
+            <div style="padding:14px 22px 16px; display:flex; align-items:baseline; justify-content:space-between; border-bottom:1px solid rgba(34,36,43,.22)">
+              <div style="font-size:26px; font-weight:700; font-stretch:112%; letter-spacing:-.026em">Saved</div>
+              <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(34,36,43,.55)">4 · price watch on 2</div>
+            </div>
+
+            <sc-for list="{{ saved }}" as="s" hint-placeholder-count="4">
+              <div style="display:flex; gap:16px; padding:18px 22px; border-bottom:1px solid rgba(34,36,43,.12); align-items:stretch">
+                <div style="flex:0 0 76px; height:92px; background:#f1f1f3; background-image:repeating-linear-gradient(122deg, rgba(34,36,43,.06) 0 6px, rgba(34,36,43,0) 6px 13px)"></div>
+                <div style="flex:1; display:flex; flex-direction:column; justify-content:space-between">
+                  <div style="display:flex; flex-direction:column; gap:6px">
+                    <div style="font-size:15.5px; font-weight:600; letter-spacing:-.015em">{{ s.name }}</div>
+                    <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:{{ s.statusColor }}">{{ s.status }}</div>
+                  </div>
+                  <div style="display:flex; align-items:flex-end; justify-content:space-between">
+                    <div style="font-family:'IBM Plex Mono',monospace; font-size:15px; font-weight:600; font-variant-numeric:tabular-nums">{{ s.price }}</div>
+                    <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; padding:7px 12px; border:1px solid rgba(34,36,43,.28)">{{ s.action }}</div>
+                  </div>
+                </div>
+              </div>
+            </sc-for>
+
+            <div style="padding:26px 22px; display:flex; flex-direction:column; gap:8px">
+              <div style="font-size:15px; font-weight:600; letter-spacing:-.014em">Price watch</div>
+              <div style="font-size:13.5px; line-height:1.55; color:rgba(34,36,43,.68); text-wrap:pretty">We check saved items daily and message you once, on the day a price drops.</div>
+            </div>
+            <div style="height:80px"></div>
+          </div>
+
+          <div style="position:absolute; left:0; right:0; bottom:0; background:rgba(251,251,252,.94); backdrop-filter:blur(12px); border-top:1px solid rgba(34,36,43,.16); display:flex; padding:12px 22px 22px; font-family:'IBM Plex Mono',monospace; font-size:11px">
+            <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:7px; color:rgba(34,36,43,.5)"><div style="width:16px; height:2px; background:transparent"></div>store</div>
+            <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:7px; color:rgba(34,36,43,.5)"><div style="width:16px; height:2px; background:transparent"></div>browse</div>
+            <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:7px; color:#22242b"><div style="width:16px; height:2px; background:var(--nx-accent,#4b3ecb)"></div>saved</div>
+            <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:7px; color:rgba(34,36,43,.5)"><div style="width:16px; height:2px; background:transparent"></div>bag</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 06 CHECKOUT -->
+    <div style="display:flex; flex-direction:column; gap:12px">
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:rgba(34,36,43,.55)">06 — Checkout</div>
+      <div style="width:410px; padding:10px; background:#1c1e24; border-radius:46px; box-shadow:0 24px 60px -30px rgba(20,22,28,.55)">
+        <div style="width:390px; height:844px; background:#fbfbfc; border-radius:37px; overflow:hidden; position:relative">
+          <div style="height:100%; overflow-y:auto">
+            <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 22px 6px; font-family:'IBM Plex Mono',monospace; font-size:12px; font-weight:500">
+              <div>10:24</div>
+              <div style="display:flex; align-items:flex-end; gap:3px">
+                <div style="width:3px; height:5px; background:#22242b"></div>
+                <div style="width:3px; height:8px; background:#22242b"></div>
+                <div style="width:3px; height:11px; background:#22242b"></div>
+                <div style="width:22px; height:10px; border:1px solid #22242b; margin-left:5px; padding:1.5px; display:flex"><div style="flex:0 0 72%; background:#22242b"></div></div>
+              </div>
+            </div>
+
+            <div style="padding:14px 22px 0; display:flex; flex-direction:column; gap:16px">
+              <div style="font-size:26px; font-weight:700; font-stretch:112%; letter-spacing:-.026em">Checkout</div>
+              <div style="display:flex; font-family:'IBM Plex Mono',monospace; font-size:10.5px">
+                <div style="flex:1; border-top:2px solid #22242b; padding-top:8px">01 delivery</div>
+                <div style="flex:1; border-top:2px solid var(--nx-accent,#4b3ecb); padding-top:8px; padding-left:10px">02 payment</div>
+                <div style="flex:1; border-top:1px solid rgba(34,36,43,.22); padding-top:8px; padding-left:10px; color:rgba(34,36,43,.45)">03 review</div>
+              </div>
+            </div>
+
+            <div style="padding:24px 22px 8px; display:flex; flex-direction:column; gap:20px">
+              <div style="display:flex; flex-direction:column; gap:5px">
+                <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:rgba(34,36,43,.55)">deliver to</div>
+                <div style="display:flex; justify-content:space-between; align-items:baseline; padding-bottom:9px; border-bottom:1px solid rgba(34,36,43,.28)">
+                  <div style="font-size:14.5px; font-weight:500">M. Okafor · 118 Grand St, Apt 4B</div>
+                  <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--nx-accent,#4b3ecb)">edit</div>
+                </div>
+              </div>
+
+              <div style="display:flex; flex-direction:column; gap:11px">
+                <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:rgba(34,36,43,.55)">card</div>
+                <div style="display:flex; flex-direction:column; gap:14px">
+                  <div style="display:flex; justify-content:space-between; padding-bottom:9px; border-bottom:1px solid rgba(34,36,43,.28); font-family:'IBM Plex Mono',monospace; font-size:14px; letter-spacing:.04em">
+                    <div>4218</div><div>8834</div><div>0192</div><div>7745</div>
+                  </div>
+                  <div style="display:flex; gap:22px">
+                    <div style="flex:1; display:flex; justify-content:space-between; padding-bottom:9px; border-bottom:1px solid rgba(34,36,43,.28); font-family:'IBM Plex Mono',monospace; font-size:14px"><div>09 / 29</div><div style="color:rgba(34,36,43,.4)">exp</div></div>
+                    <div style="flex:1; display:flex; justify-content:space-between; padding-bottom:9px; border-bottom:1px solid rgba(34,36,43,.28); font-family:'IBM Plex Mono',monospace; font-size:14px"><div>•••</div><div style="color:rgba(34,36,43,.4)">cvc</div></div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="display:flex; flex-direction:column; gap:11px">
+                <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:rgba(34,36,43,.55)">or pay with</div>
+                <div style="display:flex; gap:10px">
+                  <div style="flex:1; padding:14px 0; text-align:center; border:1px solid rgba(34,36,43,.22); font-family:'IBM Plex Mono',monospace; font-size:11.5px">wallet</div>
+                  <div style="flex:1; padding:14px 0; text-align:center; border:1px solid rgba(34,36,43,.22); font-family:'IBM Plex Mono',monospace; font-size:11.5px">Nexa credit</div>
+                  <div style="flex:1; padding:14px 0; text-align:center; border:1px solid rgba(34,36,43,.22); font-family:'IBM Plex Mono',monospace; font-size:11.5px">24 mo</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin:20px 22px 0; padding:18px; background:#f1f1f3; display:flex; flex-direction:column; gap:12px">
+              <div style="display:flex; gap:14px; align-items:center">
+                <div style="flex:0 0 44px; height:52px; background:#e3e3e6; background-image:repeating-linear-gradient(122deg, rgba(34,36,43,.07) 0 5px, rgba(34,36,43,0) 5px 11px)"></div>
+                <div style="flex:1; font-family:'IBM Plex Mono',monospace; font-size:11px; line-height:1.7; color:rgba(34,36,43,.7)">
+                  <div style="color:#22242b; font-weight:500">Arc 5 Pro · Anodized Violet</div>
+                  <div>256 GB · qty 1 · ships Tue 9 Sep</div>
+                </div>
+              </div>
+              <div style="display:flex; gap:14px; align-items:center">
+                <div style="flex:0 0 44px; height:52px; background:#e3e3e6; background-image:repeating-linear-gradient(122deg, rgba(34,36,43,.07) 0 5px, rgba(34,36,43,0) 5px 11px)"></div>
+                <div style="flex:1; font-family:'IBM Plex Mono',monospace; font-size:11px; line-height:1.7; color:rgba(34,36,43,.7)">
+                  <div style="color:#22242b; font-weight:500">Pulse earbuds</div>
+                  <div>Graphite · qty 1 · ships Tue 9 Sep</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="padding:20px 22px 0; display:flex; align-items:baseline; justify-content:space-between; border-top:2px solid #1c1e24; margin:20px 22px 0">
+              <div style="font-size:16px; font-weight:600; letter-spacing:-.016em">Due today</div>
+              <div style="font-family:'IBM Plex Mono',monospace; font-size:22px; font-weight:600; font-variant-numeric:tabular-nums">$1,712.13</div>
+            </div>
+            <div style="height:120px"></div>
+          </div>
+
+          <div style="position:absolute; left:0; right:0; bottom:0; background:rgba(251,251,252,.95); backdrop-filter:blur(12px); border-top:1px solid rgba(34,36,43,.16); padding:14px 22px 24px; display:flex; flex-direction:column; gap:10px">
+            <div style="padding:16px; background:var(--nx-accent,#4b3ecb); color:#fff; text-align:center; font-size:15px; font-weight:600">Pay $1,712.13</div>
+            <div style="font-family:'IBM Plex Mono',monospace; font-size:10px; text-align:center; color:rgba(34,36,43,.5)">free returns within 14 days</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#4b3ecb&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#4b3ecb&quot;,&quot;#1f4750&quot;,&quot;#5c4632&quot;,&quot;#2f5d3a&quot;],&quot;section&quot;:&quot;Brand&quot;}}">
+class Component extends DCLogic {
+  state = { g: 0, v: 1, sweep: 0, filtersOpen: false, sort: 0, size: 1, spec: { '5G mmWave': true, 'eSIM dual': false, 'Wireless charging': true }, store: 1 };
+
+  sorts = ['newest', 'price ↑', 'price ↓', 'battery life'];
+  vList = [
+    { name: 'Graphite', hex: '#3a3d46', stage: '#24262c' },
+    { name: 'Anodized Violet', hex: '#4b3ecb', stage: '#2a2545' },
+    { name: 'Titanium', hex: '#b4b7bd', stage: '#3a3c42' },
+    { name: 'Deep Petrol', hex: '#1f4750', stage: '#1c2f34' }
+  ];
+  sizes = ['5.8"', '6.1"', '6.3"', '6.8"'];
+  stores = ['128 GB', '256 GB', '512 GB'];
+
+  pick(v) {
+    this.setState({ v, sweep: 1 });
+    clearTimeout(this._t);
+    this._t = setTimeout(() => this.setState({ sweep: 0 }), 300);
+  }
+
+  renderVals() {
+    const accent = this.props.accent || '#4b3ecb';
+    const ink = 'rgba(34,36,43,.35)';
+    const v = this.state.v;
+    const tags = [{ label: 'in stock' }, { label: '$600—$1,400' }];
+    Object.keys(this.state.spec).forEach(k => { if (this.state.spec[k]) tags.push({ label: k.toLowerCase() }); });
+
+    return {
+      accent,
+      cats: [
+        { name: 'Phones', count: '12' }, { name: 'Laptops', count: '06' },
+        { name: 'Audio', count: '09' }, { name: 'Power', count: '07' }, { name: 'Wear', count: '04' }
+      ],
+      grid: [
+        { name: 'Nexa Slate 14', spec: '14.2" · 1.19 kg', price: '$1,899', slot: 'laptop, 3/4 view' },
+        { name: 'Nexa Pulse', spec: 'buds · 34 h case', price: '$229', slot: 'buds in case' },
+        { name: 'Nexa Cell 20K', spec: '20,000 mAh · 40 W', price: '$89', slot: 'power bank, edge' },
+        { name: 'Nexa Band 3', spec: '41 mm · 9 d', price: '$299', slot: 'watch, strap coiled' }
+      ],
+      listing: [
+        { name: 'Nexa Arc 5 Pro', spec: '6.30" 1600 nits\n48 MP · Ti frame · 4,700 mAh', price: '$1,349', was: '$1,449', slot: 'front, on stand', dots: [{ hex: '#3a3d46' }, { hex: accent }, { hex: '#b4b7bd' }, { hex: '#1f4750' }] },
+        { name: 'Nexa Arc 5', spec: '6.10" 1400 nits\n48 MP · alloy frame · 4,200 mAh', price: '$1,099', was: '', slot: 'front, on stand', dots: [{ hex: '#3a3d46' }, { hex: '#b4b7bd' }, { hex: '#1f4750' }] },
+        { name: 'Nexa Arc 5 Max', spec: '6.80" 1600 nits\n48 MP · Ti frame · 5,400 mAh', price: '$1,399', was: '', slot: 'front, on stand', dots: [{ hex: '#3a3d46' }, { hex: accent }] },
+        { name: 'Nexa Arc 4', spec: '6.10" 1200 nits\n32 MP · alloy frame · 4,100 mAh', price: '$799', was: '$899', slot: 'front, on stand', dots: [{ hex: '#3a3d46' }, { hex: '#b4b7bd' }] }
+      ],
+      resultCount: '04',
+      filterCount: '(' + tags.length + ')',
+      activeTags: tags,
+      sortLabel: this.sorts[this.state.sort],
+      cycleSort: () => this.setState(s => ({ sort: (s.sort + 1) % this.sorts.length })),
+      toggleFilters: () => this.setState(s => ({ filtersOpen: !s.filtersOpen })),
+      filtersOpen: this.state.filtersOpen,
+      sizeOpts: this.sizes.map((label, i) => ({
+        label, onPick: () => this.setState({ size: i }),
+        bg: i === this.state.size ? '#1c1e24' : 'transparent',
+        fg: i === this.state.size ? '#fbfbfc' : 'rgba(34,36,43,.7)'
+      })),
+      specFilters: Object.keys(this.state.spec).map((label, i) => ({
+        label, count: ['08', '05', '11'][i],
+        bg: this.state.spec[label] ? accent : 'transparent',
+        onPick: () => this.setState(s => ({ spec: Object.assign({}, s.spec, { [label]: !s.spec[label] }) }))
+      })),
+
+      sku: 'NX-A5P-256',
+      frames: [
+        { label: 'front · display on', note: '390 × 400 slot' },
+        { label: 'edge · titanium band', note: 'macro, 8.1 mm' },
+        { label: 'ports · USB-C 3.2', note: 'macro, underside' },
+        { label: 'screen · detail', note: 'crop, 1600 nits' },
+        { label: 'in hand · scale', note: 'lifestyle' }
+      ],
+      galleryX: (-this.state.g * 20) + '%',
+      railX: 'calc(' + (this.state.g * 25) + '% - ' + (this.state.g * 16) + 'px)',
+      frameIndex: '0' + (this.state.g + 1),
+      nextFrame: () => this.setState(s => ({ g: (s.g + 1) % 5 })),
+      stageBg: this.vList[v].stage,
+      sweepOpacity: this.state.sweep ? 0.34 : 0,
+      variantName: this.vList[v].name,
+      variants: this.vList.map((x, i) => ({
+        hex: x.hex, border: i === v ? accent : 'transparent', onPick: () => this.pick(i)
+      })),
+      storage: this.stores.map((label, i) => ({
+        label,
+        border: i === this.state.store ? '#1c1e24' : 'rgba(34,36,43,.22)',
+        bg: i === this.state.store ? '#1c1e24' : 'transparent',
+        fg: i === this.state.store ? '#fbfbfc' : 'rgba(34,36,43,.7)',
+        onPick: () => this.setState({ store: i })
+      })),
+      specs: [
+        { k: 'display', v: '6.30 in OLED, 1—120 Hz' },
+        { k: 'chip', v: 'Nexa N5 · 3 nm' },
+        { k: 'camera', v: '48 + 12 + 12 MP' },
+        { k: 'battery', v: '4,700 mAh · 60% in 22 min' },
+        { k: 'frame', v: 'grade 5 titanium' },
+        { k: 'weight', v: '187 g' },
+        { k: 'ports', v: 'USB-C 3.2 gen 2' },
+        { k: 'water', v: 'IP68, 6 m / 30 min' }
+      ],
+
+      bag: [
+        { name: 'Nexa Arc 5 Pro', config: 'Anodized Violet · 256 GB', price: '$1,349', qty: '1' },
+        { name: 'Nexa Pulse', config: 'Graphite · buds', price: '$229', qty: '1' }
+      ],
+      saved: [
+        { name: 'Nexa Slate 14', price: '$1,899', status: 'in stock · ships Tue', statusColor: 'rgba(34,36,43,.55)', action: 'add to bag' },
+        { name: 'Nexa Vue', price: '$749', status: 'price dropped $50', statusColor: accent, action: 'add to bag' },
+        { name: 'Nexa Band 3', price: '$299', status: 'back in stock 12 Sep', statusColor: 'rgba(34,36,43,.55)', action: 'notify me' },
+        { name: 'Nexa Cell 20K', price: '$89', status: 'price dropped $10', statusColor: accent, action: 'add to bag' }
+      ],
+      ink
+    };
+  }
+}
+</script>
+</body>
+</html>
