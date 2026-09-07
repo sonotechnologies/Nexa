@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #22242b;
+  --color-paper: #fbfbfc;
+  --color-canvas: #f2f2f4;
+  --color-dark: #1c1e24;
+  --color-dark-2: #24262c;
+  --color-accent: #4b3ecb;
+  --color-tint: #eceaf6;
+  --color-panel: #f1f1f3;
+
+  --font-display: var(--font-archivo), system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+}
+
+html {
+  background: var(--color-paper);
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+  text-wrap: pretty;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+@layer utilities {
+  .stripe-dark {
+    background-image: repeating-linear-gradient(
+      122deg,
+      rgba(255, 255, 255, 0.07) 0 7px,
+      rgba(255, 255, 255, 0) 7px 15px
+    );
+  }
+  .stripe-light {
+    background-color: var(--color-panel);
+    background-image: repeating-linear-gradient(
+      122deg,
+      rgba(34, 36, 43, 0.06) 0 6px,
+      rgba(34, 36, 43, 0) 6px 13px
+    );
+  }
+  .stripe-tint {
+    background-color: var(--color-tint);
+    background-image: repeating-linear-gradient(
+      122deg,
+      rgba(34, 36, 43, 0.07) 0 5px,
+      rgba(34, 36, 43, 0) 5px 11px
+    );
+  }
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
