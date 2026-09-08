@@ -4,12 +4,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useStore } from "@/lib/store";
 import clsx from "clsx";
+import { HomeIcon, GridIcon, HeartIcon, BagIcon } from "@/components/NavIcons";
 
 const TABS = [
-  { href: "/", label: "store" },
-  { href: "/category/all", label: "browse" },
-  { href: "/wishlist", label: "saved" },
-  { href: "/cart", label: "bag" },
+  { href: "/", label: "store", Icon: HomeIcon },
+  { href: "/category/all", label: "browse", Icon: GridIcon },
+  { href: "/wishlist", label: "saved", Icon: HeartIcon },
+  { href: "/cart", label: "bag", Icon: BagIcon },
 ];
 
 export function BottomNav() {
@@ -26,9 +27,10 @@ export function BottomNav() {
           <Link
             key={tab.href}
             href={tab.href}
-            className={clsx("flex flex-1 flex-col items-center gap-1.5", active ? "text-ink" : "text-ink/50")}
+            className={clsx("flex flex-1 flex-col items-center gap-1", active ? "text-ink" : "text-ink/50")}
           >
-            <div className={clsx("h-[2px] w-4", active ? "bg-accent" : "bg-transparent")} />
+            <div className={clsx("mb-0.5 h-[2px] w-4", active ? "bg-accent" : "bg-transparent")} />
+            <tab.Icon className="h-[19px] w-[19px]" />
             <span>
               {tab.label}
               {count > 0 ? <span className="ml-1 text-accent">{count}</span> : null}
