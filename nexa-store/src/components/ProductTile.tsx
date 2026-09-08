@@ -6,12 +6,7 @@ import { moneyRound } from "@/lib/format";
 export function ProductTile({ product }: { product: Product }) {
   return (
     <Link href={`/product/${product.slug}`} className="group flex flex-col gap-3 p-4 md:p-5">
-      <PlaceholderArt
-        tone="light"
-        align="end"
-        label={product.frames[0]?.label ?? "product shot"}
-        className="h-32 md:h-40"
-      />
+      <PlaceholderArt category={product.category} tone="light" className="h-32 md:h-40" />
       <div className="flex flex-col gap-1">
         <div className="flex items-baseline justify-between gap-2">
           <div className="text-[14px] font-semibold leading-tight tracking-[-.012em] group-hover:text-accent">

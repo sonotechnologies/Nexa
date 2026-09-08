@@ -6,12 +6,7 @@ import { moneyRound } from "@/lib/format";
 export function ProductRow({ product }: { product: Product }) {
   return (
     <Link href={`/product/${product.slug}`} className="group flex gap-4 py-5">
-      <PlaceholderArt
-        tone="light"
-        align="end"
-        label={product.frames[0]?.label ?? "product shot"}
-        className="h-[132px] w-[108px] shrink-0"
-      />
+      <PlaceholderArt category={product.category} tone="light" className="h-[132px] w-[108px] shrink-0" />
       <div className="flex min-w-0 flex-1 flex-col justify-between py-0.5">
         <div className="flex flex-col gap-1.5">
           <div className="text-[16px] font-semibold leading-tight tracking-[-.016em] group-hover:text-accent">

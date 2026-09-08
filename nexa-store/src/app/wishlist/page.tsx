@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useStore } from "@/lib/store";
+import { useAuthGate } from "@/lib/use-auth-gate";
 import { getProductById } from "@/data/products";
 import { PlaceholderArt } from "@/components/PlaceholderArt";
 import { moneyRound } from "@/lib/format";
@@ -10,6 +11,7 @@ export default function WishlistPage() {
   const wishlist = useStore((s) => s.wishlist);
   const moveToCart = useStore((s) => s.moveToCart);
   const toggleWishlist = useStore((s) => s.toggleWishlist);
+  const { requireAuth } = useAuthGate();
 
   const saved = wishlist.map((id) => getProductById(id)).filter((p): p is NonNullable<typeof p> => Boolean(p));
 
@@ -33,7 +35,7 @@ export default function WishlistPage() {
         <div className="divide-y divide-ink/12">
           {saved.map((product) => (
             <div key={product.id} className="flex gap-4 py-5">
-              <PlaceholderArt tone="light" label={product.frames[0]?.label ?? ""} className="h-[92px] w-[76px] shrink-0" />
+              <PlaceholderArt category={product.category} tone="light" className="h-[92px] w-[76px] shrink-0" />
               <div className="flex flex-1 flex-col justify-between">
                 <div className="flex flex-col gap-1.5">
                   <Link href={`/product/${product.slug}`} className="text-[15.5px] font-semibold tracking-[-.015em] hover:text-accent">
@@ -53,7 +55,10 @@ export default function WishlistPage() {
                     </button>
                     <button
                       type="button"
-                      onClick={() => moveToCart(product.id, product.variants[0].name, product.storageOptions?.[0])}
+                      onClick={() => {
+                        if (!requireAuth()) return;
+                        moveToCart(product.id, product.variants[0].name, product.storageOptions?.[0]);
+                      }}
                       className="border border-ink/28 px-3 py-1.5 font-mono text-[11px]"
                     >
                       add to bag

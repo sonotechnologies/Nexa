@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useStore } from "@/lib/store";
+import { useAuthStore } from "@/lib/auth-store";
 import { categories } from "@/data/products";
 
 export function Header() {
@@ -12,6 +13,8 @@ export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const cartCount = useStore((s) => s.cart.reduce((n, l) => n + l.qty, 0));
   const wishCount = useStore((s) => s.wishlist.length);
+  const currentUser = useAuthStore((s) => s.currentUser);
+  const signOut = useAuthStore((s) => s.signOut);
 
   function submitSearch(e: React.FormEvent) {
     e.preventDefault();
@@ -66,6 +69,20 @@ export function Header() {
           <Link href="/cart" className="hover:text-ink">
             bag{cartCount > 0 ? <span className="ml-1 font-semibold text-accent">{cartCount}</span> : null}
           </Link>
+          <div className="hidden items-center gap-4 border-l border-ink/14 pl-4 md:flex">
+            {currentUser ? (
+              <>
+                <span className="text-ink/55">hi, {currentUser.name.split(" ")[0]}</span>
+                <button type="button" onClick={signOut} className="hover:text-ink">
+                  sign out
+                </button>
+              </>
+            ) : (
+              <Link href="/sign-in" className="hover:text-ink">
+                sign in
+              </Link>
+            )}
+          </div>
         </div>
       </div>
 
@@ -90,6 +107,20 @@ export function Header() {
               </Link>
             ))}
           </nav>
+          <div className="mt-3 flex items-center gap-4 border-t border-ink/12 pt-3 font-mono text-[12.5px] text-ink/72">
+            {currentUser ? (
+              <>
+                <span className="text-ink/55">hi, {currentUser.name.split(" ")[0]}</span>
+                <button type="button" onClick={signOut} className="hover:text-ink">
+                  sign out
+                </button>
+              </>
+            ) : (
+              <Link href="/sign-in" onClick={() => setMenuOpen(false)} className="hover:text-ink">
+                sign in
+              </Link>
+            )}
+          </div>
         </div>
       ) : null}
     </header>

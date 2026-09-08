@@ -32,29 +32,6 @@ body {
 }
 
 @layer utilities {
-  .stripe-dark {
-    background-image: repeating-linear-gradient(
-      122deg,
-      rgba(255, 255, 255, 0.07) 0 7px,
-      rgba(255, 255, 255, 0) 7px 15px
-    );
-  }
-  .stripe-light {
-    background-color: var(--color-panel);
-    background-image: repeating-linear-gradient(
-      122deg,
-      rgba(34, 36, 43, 0.06) 0 6px,
-      rgba(34, 36, 43, 0) 6px 13px
-    );
-  }
-  .stripe-tint {
-    background-color: var(--color-tint);
-    background-image: repeating-linear-gradient(
-      122deg,
-      rgba(34, 36, 43, 0.07) 0 5px,
-      rgba(34, 36, 43, 0) 5px 11px
-    );
-  }
   .tabular {
     font-variant-numeric: tabular-nums;
   }

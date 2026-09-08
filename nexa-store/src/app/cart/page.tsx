@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useStore } from "@/lib/store";
+import { useAuthGate } from "@/lib/use-auth-gate";
 import { resolveCartLines, cartSubtotal } from "@/lib/cart-helpers";
 import { PlaceholderArt } from "@/components/PlaceholderArt";
 import { moneyRound, money } from "@/lib/format";
@@ -12,6 +13,7 @@ export default function CartPage() {
   const setQty = useStore((s) => s.setQty);
   const removeFromCart = useStore((s) => s.removeFromCart);
   const addToCart = useStore((s) => s.addToCart);
+  const { requireAuth } = useAuthGate();
 
   const resolved = resolveCartLines(cart);
   const subtotal = cartSubtotal(resolved);
@@ -43,7 +45,7 @@ export default function CartPage() {
           <div className="divide-y divide-ink/12">
             {resolved.map(({ line, product }) => (
               <div key={line.key} className="flex gap-4 py-5">
-                <PlaceholderArt tone="light" label={product.frames[0]?.label ?? ""} className="h-[100px] w-[84px] shrink-0" />
+                <PlaceholderArt category={product.category} tone="light" className="h-[100px] w-[84px] shrink-0" />
                 <div className="flex flex-1 flex-col justify-between">
                   <div className="flex flex-col gap-1.5">
                     <div className="flex justify-between gap-3">
@@ -92,7 +94,7 @@ export default function CartPage() {
 
           {upsell ? (
             <div className="my-5 flex items-center gap-3.5 border border-ink/18 p-4">
-              <PlaceholderArt tone="tint" label={upsell.frames[0]?.label ?? ""} className="h-[52px] w-[52px] shrink-0" />
+              <PlaceholderArt category={upsell.category} tone="tint" className="h-[52px] w-[52px] shrink-0" />
               <div className="flex flex-1 flex-col gap-0.5">
                 <div className="text-[13.5px] font-semibold tracking-[-.01em]">Add {upsell.name}</div>
                 <div className="font-mono text-[10.5px] text-ink/55">
@@ -101,7 +103,10 @@ export default function CartPage() {
               </div>
               <button
                 type="button"
-                onClick={() => addToCart(upsell.id, upsell.variants[0].name, upsell.storageOptions?.[0])}
+                onClick={() => {
+                  if (!requireAuth()) return;
+                  addToCart(upsell.id, upsell.variants[0].name, upsell.storageOptions?.[0]);
+                }}
                 className="font-mono text-[11px] font-medium text-accent"
               >
                 add

@@ -13,12 +13,7 @@ export default function Home() {
     <div className="pb-20 md:pb-0">
       {/* HERO */}
       <section className="relative overflow-hidden bg-dark text-paper">
-        <PlaceholderArt
-          tone="dark"
-          label="product shot"
-          note={`${hero.name} · 3:4 · dark ground`}
-          className="h-[380px] md:h-[520px]"
-        />
+        <PlaceholderArt category={hero.category} tone="dark" iconScale="30%" className="h-[380px] md:h-[520px]" />
         <div className="mx-auto flex max-w-6xl flex-col gap-5 px-5 py-7 md:px-8 md:py-10">
           <div className="font-display text-[34px] font-bold leading-none tracking-[-.026em] md:text-[52px]" style={{ fontStretch: "114%" }}>
             {hero.name}
@@ -65,7 +60,7 @@ export default function Home() {
       {/* EDITORIAL TILE */}
       <section className="mx-auto max-w-6xl px-5 md:px-8">
         <Link href={`/product/${editorial.slug}`} className="grid overflow-hidden bg-tint md:grid-cols-2">
-          <PlaceholderArt tone="tint" label={`editorial shot · ${editorial.name}`} className="h-[190px] md:h-full" />
+          <PlaceholderArt category={editorial.category} tone="tint" iconScale="34%" className="h-[190px] md:h-full" />
           <div className="flex flex-col justify-center gap-2.5 p-6 md:p-10">
             <div className="text-[24px] font-bold leading-[1.04] tracking-[-.024em] md:text-[30px]" style={{ fontStretch: "110%" }}>
               {editorial.name}
