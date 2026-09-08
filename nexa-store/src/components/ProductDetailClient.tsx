@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
 import type { Product } from "@/data/types";
@@ -9,20 +8,8 @@ import { useStore } from "@/lib/store";
 import { useAuthGate } from "@/lib/use-auth-gate";
 import { StarRating } from "@/components/StarRating";
 import { moneyRound } from "@/lib/format";
-import { categoryArt } from "@/lib/category-art";
 
 type Tab = "description" | "specs" | "reviews";
-
-// Same 5 frames (front/edge/ports/screen/in-hand) across every product, so we
-// fake distinct "angles" on one icon by zooming/panning differently per frame
-// rather than needing real per-angle photography.
-const FRAME_FOCAL: { scale: number; x: number; y: number }[] = [
-  { scale: 1, x: 0, y: 0 },
-  { scale: 1.8, x: 22, y: -12 },
-  { scale: 1.9, x: -16, y: 20 },
-  { scale: 2.2, x: 0, y: 0 },
-  { scale: 0.62, x: 0, y: 0 },
-];
 
 export function ProductDetailClient({ product }: { product: Product }) {
   const [frameIdx, setFrameIdx] = useState(0);
@@ -104,19 +91,18 @@ export function ProductDetailClient({ product }: { product: Product }) {
                 transition: "transform 520ms cubic-bezier(.16,.84,.24,1)",
               }}
             >
-              {product.frames.map((f, i) => {
-                const focal = FRAME_FOCAL[i % FRAME_FOCAL.length];
-                return (
-                  <div key={i} className="relative flex h-[340px] flex-1 shrink-0 items-center justify-center overflow-hidden md:h-[560px]">
-                    <div
-                      className="relative h-[38%] w-[38%]"
-                      style={{ transform: `scale(${focal.scale}) translate(${focal.x}%, ${focal.y}%)` }}
-                    >
-                      <Image src={categoryArt(product.category, "dark")} alt={f.label} fill sizes="400px" className="object-contain" />
-                    </div>
+              {product.frames.map((f, i) => (
+                <div
+                  key={i}
+                  className="stripe-dark flex h-[340px] flex-1 shrink-0 items-center justify-center md:h-[560px]"
+                >
+                  <div className="px-6 text-center font-mono text-[11px] leading-relaxed text-white/62">
+                    {f.label}
+                    <br />
+                    {f.note}
                   </div>
-                );
-              })}
+                </div>
+              ))}
             </div>
             <div
               className="pointer-events-none absolute inset-0 bg-paper mix-blend-overlay transition-opacity duration-[420ms]"

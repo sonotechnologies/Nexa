@@ -1,41 +1,44 @@
-import Image from "next/image";
 import clsx from "clsx";
 import type { CategorySlug } from "@/data/types";
-import { categoryArt, type ArtTone } from "@/lib/category-art";
 
-const BG = {
-  dark: "bg-dark",
-  light: "bg-panel",
-  tint: "bg-tint",
+const TONE = {
+  dark: "stripe-dark",
+  light: "stripe-light",
+  tint: "stripe-tint",
 } as const;
 
-const ICON_TONE: Record<keyof typeof BG, ArtTone> = {
-  dark: "dark",
-  light: "light",
-  tint: "light",
+const CATEGORY_LABEL: Record<CategorySlug, string> = {
+  phones: "phone",
+  laptops: "laptop",
+  headsets: "headset",
+  "power-banks": "power bank",
 };
 
 /**
- * Placeholder product art — a themed line-art icon standing in for real
- * photography. Swap the files under public/products/ once real shots are
- * ready; nothing here needs to change.
+ * Placeholder product art — a striped pattern standing in for real
+ * photography. Swap in real shots later by replacing this component's
+ * rendering (or wiring it to actual image files) once photography exists.
  */
 export function PlaceholderArt({
   category,
   tone = "light",
   className,
-  iconScale = "52%",
 }: {
   category: CategorySlug;
-  tone?: keyof typeof BG;
+  tone?: keyof typeof TONE;
   className?: string;
-  iconScale?: string;
 }) {
+  const textTone = tone === "dark" ? "text-white/55" : "text-ink/45";
   return (
-    <div className={clsx(BG[tone], "relative flex items-center justify-center overflow-hidden", className)}>
-      <div className="relative" style={{ width: iconScale, height: iconScale }}>
-        <Image src={categoryArt(category, ICON_TONE[tone])} alt="" fill sizes="300px" className="object-contain" />
-      </div>
+    <div
+      className={clsx(
+        TONE[tone],
+        "flex items-center justify-center text-center font-mono text-[10px] leading-relaxed",
+        textTone,
+        className
+      )}
+    >
+      <div>{CATEGORY_LABEL[category]} photo</div>
     </div>
   );
 }
